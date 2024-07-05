@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloformulario.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Registro Usuarios</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Menu Principal</a></li>
+            <li><a href="usuar.html">Tabla Usuarios</a></li>
+        </ul>
+    </nav>
+
+    <h2>Formulario Usuarios</h2>
+
+    <form id="formulario-Usuarios" action="/guardar_usuario" method="post">
+        <div>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Za-z\s]+" required>
+        </div>
+        <div>
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
